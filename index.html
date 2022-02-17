@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Software Engineering</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html" class="logo">EIKE RACKWITZ</a>
+    <div class="ham">
+      <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="hamburger menu">
+    </div>
+    <nav>
+
+      <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="close navigation">
+
+      <ul>
+        <li><a href="#">work</a></li>
+        <li><a href="#">skills</a></li>
+        <li><a href="#">about me</a></li>
+        <li><a href="#">hire me</a></li>
+      </ul>
+
+    </nav>
+    <div class="social-header">
+      <ul>
+        <li><a href="#"><img src="images/mail.png" alt="mail"></a></li>
+        <li><a href="#"><img src="images/github.svg" alt="github"></a></li>
+        <li><a href="#"><img src="images/Freelancermap.png" alt="freelancermap"></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="content">
+      <img class="portrait" src="images/portrait_color.jpg" alt="Portrait">
+      <h1>Software Developer</h1>
+    </div>
+  </div>
+<!--
+  <section class="recentwork">
+    <div class="coloredcentered">recent work</div>
+    <div class="projects-container">
+      <ul>
+        <li class="transition">
+          <div class="icon-container one">
+            <img src="images/filesorter.svg" alt="filesorter icon">
+          </div>
+          <p class="project-title">Organize Files</p>
+          <p class="featured-desc project-desc">A filesorter written in Python. Usefull to sort any kind of files, e.g. your Download folder </p>
+        </li>
+        <li class="transition">
+          <div class="icon-container two">
+            <img src="images/scraper.svg" alt="scraper icon">
+          </div>
+          <p class="project-title">Organize Files</p>
+          <p class="featured-desc project-desc">Scraping freelancer project and analyse the data.</p>
+        </li>
+        <li class="transition">
+          <div class="icon-container three">
+            <img src="images/treejs.svg" alt="treejs icon">
+          </div>
+          <p class="project-title">Organize Files</p>
+          <p class="featured-desc project-desc">3d object build with tree.js</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+//-->
+  <section class="skills">
+    <div class="whitecentered">skills</div>
+    <div class="skills-container">
+        <ul>
+            <li>python</li>
+            <li>javascript</li>
+            <li>typescript</li>
+            <li>html</li>
+            <li>css</li>
+            <li>linux</li>
+        </ul>
+    </div>
+  </section>
+  <section class="aboutme">
+    <div class="coloredcentered">about me</div>
+    <div class="aboutme-container">
+      <p>My name is Eike Rackwitz and i’m a mathematical-technical software developer B.Sc. from germany.</p>
+    </div>
+  </section>
+  <script>
+
+    const mobileBtn = document.getElementById('mobile-cta')
+          nav = document.querySelector('nav');
+          mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+            })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+            })
+  </script>
+</body>
+</html>
