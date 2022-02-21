@@ -24,6 +24,7 @@ img {
   position: absolute;
   left: 0;
   right: 0;
+  bottom: 0;
   color: #aaa;
   height: 20px;
   font-size: 0.75rem;
@@ -54,6 +55,9 @@ img {
   color: black;
   letter-spacing: 0.2em;
   font-size: 107%;
+}
+.navbar .logo:hover {
+  color: #3b648c;
 }
 .navbar nav {
   display: none;
@@ -138,7 +142,7 @@ nav li a {
   text-align: right;
 }
 nav li a:hover {
-  font-weight: bold;
+  color: #3b648c;
 }
 
 @media only screen and (min-width: 600px) {
@@ -203,14 +207,59 @@ nav li a:hover {
     justify-content: space-between;
     float: right;
   }
-  .social-header ul img {
-    width: 18px;
+  .social-header ul .fa-solid {
+    width: 20px;
+    margin: 0 0.6em 0 0.6em;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    border-radius: 50%;
+    color: black;
+  }
+  .social-header ul .fa-solid:hover {
+    opacity: 0.7;
+    color: #3b648c;
+  }
+  .social-header ul .fa-brands {
+    width: 20px;
+    margin: 0 0.6em 0 0.6em;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border-radius: 50%;
+    color: black;
+  }
+  .social-header ul .fa-brands:hover {
+    opacity: 0.7;
+    color: #3b648c;
+  }
+  .social-header ul .freelancermap {
+    width: 19px;
+    margin: 0 0.6em 0 0.6em;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border-radius: 50%;
+    color: black;
+    content: url("../images/freelancermap.svg");
+  }
+  .social-header ul .freelancermap:hover {
+    content: url("../images/freelancermap_blue.svg");
+    opacity: 0.7;
+  }
+  .social-header ul .github {
+    width: 21px;
     margin: 0 0.6em 0 0.6em;
     vertical-align: middle;
+    content: url("../images/github.svg");
     display: inline-block;
   }
-  .social-header ul .mail:hover {
-    width: 20px;
+  .social-header ul .github:hover {
+    width: 21px;
+    margin: 0 0.6em 0 0.6em;
+    vertical-align: middle;
+    content: url("../images/github_blue.svg");
+    display: inline-block;
   }
 
   .recentwork {
