@@ -9,7 +9,6 @@
 }
 
 body {
-//  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', arial;
@@ -43,7 +42,7 @@ img {
   padding: 5px;
   border-top-style: solid;
   border-top-width: 1px;
-  border-top-color: rgba(0,0,0,.125);
+  border-top-color: #b3b3b3;
 }
 
 .navbar {
@@ -111,30 +110,67 @@ img {
   }
 }
 
-.skills {
+.sectionheader {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding: 3em;
+}
+
+.work {
+  color: black;
   background: white;
+  padding: 0 2em 2em 2em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #b3b3b3;
+}
+
+.projects-container ul li{
+  background: #fafafa;
   padding: 2em;
-  padding-top: 7em;
-  .whitecentered {
-    color: black;
-    text-align: center;
-    font-weight: bold;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  
+  .icon-container {
+    height: 100px;
+    display: grid;
+    place-content: center;
+    width: 30px;
+    margin: 0 auto;
   }
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: .85em;
+  text-align: center;
+}
+
+.featured-desc {
+  text-align: center;
+  font-size: .80em;
+}
+
+.skills {
+  background: #f2f2f2;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #b3b3b3;
   .skills-container {
-    margin-bottom: 1em;
-    padding: 2em;
+    padding: 3em;
     text-align: center;
   }
 }
 
 .aboutme {
   color: black;
-  background: #f2f2f2;
+  background: white;
   text-align: center;
-  padding: 2em;
-  .coloredcentered {
-    font-weight: bold;
-  }
+  padding: 3em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #b3b3b3;
 }
 
 nav.menu-btn {
@@ -287,23 +323,13 @@ nav {
         content: url("../images/github_blue.svg");
         display: inline-block;
       }
-
-
-      //img {
-      //  width: 18px;
-      // margin: 0 .6em 0 .6em;
-      //vertical-align: middle;
-      //   display: inline-block;
-
-
     }
   }
-  .recentwork {
-    margin-bottom: -7em;
-  }
+
+
   .projects-container ul {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-gap: 1em;
   }
 }
