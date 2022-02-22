@@ -22,17 +22,17 @@
           <li><a href="#work">work</a></li>
           <li><a href="#skills">skills</a></li>
           <li><a href="#aboutme">about me</a></li>
-          <li><a href="https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/406821-profil-softwareentwickler.html" target="_blank">hire me</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
 
-      <div class="social-header">
-        <ul>
-          <li><a href="mailto:eike.rackwitz@mail.de" target="_blank" class="fa-solid fa-at"></a></li>
-          <li><a href="https://github.com/moguls753" target="_blank" class="fa-brands fa-github"></a></li>
-          <li><a href="https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/406821-profil-softwareentwickler.html" target="_blank" class="freelancermap"></a></li>
-        </ul>
-      </div>
+    <div class="social-header">
+      <ul>
+        <li><a href="mailto:eike.rackwitz@mail.de" target="_blank" class="fa-solid fa-at"></a></li>
+        <li><a href="https://github.com/moguls753" target="_blank" class="fa-brands fa-github"></a></li>
+        <li><a href="https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/406821-profil-softwareentwickler.html" target="_blank" class="freelancermap"></a></li>
+      </ul>
+    </div>
     </div>
 
     <div class="hero">
@@ -71,41 +71,54 @@
       </div>
     </section>
 
-      <section id="skills" class="skills">
-        <div class="sectionheader">skills</div>
-        <div class="skills-container">
+    <section id="skills" class="skills">
+      <div class="sectionheader">skills</div>
+      <div class="skills-container">
+        <ul>
+          <li>python</li>
+          <li>javascript</li>
+          <li>typescript</li>
+          <li>html</li>
+          <li>css</li>
+          <li>linux</li>
+        </ul>
+      </div>
+    </section>
+    <section id="aboutme" class="aboutme">
+      <div class="sectionheader">about me</div>
+      <div class="aboutme-container">
+        <p>My name is Eike Rackwitz i’m a mathematical-technical software developer B.Sc. from germany.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="sectionheader">contact</div>
+      <div class="contact-container">
+
+        <div class="social-header-contact">
           <ul>
-            <li>python</li>
-            <li>javascript</li>
-            <li>typescript</li>
-            <li>html</li>
-            <li>css</li>
-            <li>linux</li>
+            <li><a href="mailto:eike.rackwitz@mail.de" target="_blank" class="fa-solid fa-at"></a></li>
+            <li><a href="https://github.com/moguls753" target="_blank" class="fa-brands fa-github"></a></li>
+            <li><a href="https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/406821-profil-softwareentwickler.html" target="_blank" class="freelancermap"></a></li>
           </ul>
         </div>
-      </section>
-      <section id="aboutme" class="aboutme">
-        <div class="sectionheader">about me</div>
-        <div class="aboutme-container">
-          <p>My name is Eike Rackwitz i’m a mathematical-technical software developer B.Sc. from germany.</p>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <div> 
-          &copy; 2022 Eike Rackwitz
-      </footer>
+      </div>
+    </section>
+    <footer class="footer">
+      <div> 
+        &copy; 2022 Eike Rackwitz
+    </footer>
 
 
-      <script>
+    <script>
 
-        const mobileBtn = document.getElementById('mobile-cta')
-                nav = document.querySelector('nav');
+      const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
 
-                mobileBtn.addEventListener('click', () => {
-                          nav.classList.toggle('menu-btn');
-                        })
+            mobileBtn.addEventListener('click', () => {
+                    nav.classList.toggle('menu-btn');
+                  })
 
-      </script>
+    </script>
   </body>
 </html>
