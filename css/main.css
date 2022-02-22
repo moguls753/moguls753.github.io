@@ -62,12 +62,12 @@ img {
 .navbar .social-header {
   display: none;
 }
-.navbar .logo {
+.navbar .logo a {
   color: black;
   letter-spacing: 0.2em;
   font-size: 104%;
 }
-.navbar .logo:hover {
+.navbar .logo a:hover {
   color: #3b648c;
 }
 .navbar nav {
@@ -141,6 +141,7 @@ nav a {
 }
 nav a:hover {
   font-weight: bold;
+  color: #3b648c !important;
 }
 nav li {
   padding: 0.1em;
@@ -166,6 +167,7 @@ nav li {
     height: auto;
     width: unset;
     padding: 0;
+    animation: none;
   }
   .navbar nav ul {
     display: flex;
@@ -185,6 +187,7 @@ nav li {
   }
   .navbar nav {
     display: flex;
+    animation: none;
     justify-content: center;
     background: ul;
     background-display: flex;
