@@ -55,7 +55,7 @@ img {
 .navbar .logo {
   color: black;
   letter-spacing: 0.2em;
-  font-size: 107%;
+  font-size: 104%;
 }
 .navbar .logo:hover {
   color: #3b648c;
@@ -180,6 +180,7 @@ nav li {
   }
   .navbar nav a {
     color: black;
+    font-size: 90%;
     display: block;
     padding: 0 0.5em;
   }
