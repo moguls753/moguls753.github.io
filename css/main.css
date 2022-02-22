@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Public+Sans:wght@300;400&display=swap");
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 body {
   height: 100vh;
   margin: 0;
@@ -62,6 +70,8 @@ img {
 }
 .navbar nav {
   display: none;
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
 }
 
 .hero {
