@@ -72,7 +72,7 @@ img {
 }
 .navbar nav {
   display: none;
-  animation: growDown 300ms ease-in-out forwards;
+  animation: growDown 200ms ease-in-out forwards;
   transform-origin: top center;
 }
 
