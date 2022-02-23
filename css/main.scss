@@ -125,7 +125,10 @@ img {
   border-bottom-style: solid;
   border-bottom-color: #b3b3b3;
 }
-
+.projects-container {
+  width: 300px;
+  margin: auto;
+}
 .projects-container ul li{
   background: #fafafa;
   padding: 1em;
@@ -164,31 +167,21 @@ img {
   }
 }
 
-.aboutme {
+.aboutme-contact {
+  display: block;
+  text-align: center;
   color: black;
   background: white;
-  text-align: center;
   padding: 0em;
+  padding-bottom: 4em;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #b3b3b3;
 }
-.aboutme-container {
-  p {
-    padding: 0 1em 1em 1em;
-    margin: 0;
-  }
+.aboutme {
+    width: 50vw;
+    margin: auto;
 }
-.contact {
-
-  color: black;
-  background: #f2f2f2;
-  text-align: center;
-  padding: 1em;
-  padding-top: 0;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #b3b3b3;
   .social-header-contact {
     display: grid;
     justify-content: center;
@@ -200,7 +193,7 @@ img {
         margin-left: 0;
       }
       li a span {
-        font-size: .70em;
+        font-size: .90em;
         color: black;
         vertical-align: center;
         padding-left: .5em;
@@ -236,7 +229,7 @@ img {
       }
     }
   }
-}
+
 
 nav.menu-btn {
   display: block;
@@ -298,11 +291,18 @@ nav {
       }
     }
   }
+
+    .projects-container {
+      width: 300px;
+      margin: auto;
+    }
 }
 
-@media only screen and (min-width: 850px){
+@media only screen and (min-width: 1010px){
   .navbar {
     grid-template-columns: 22% 56% 22%;
+    margin-left: 6vw;
+    margin-right: 6vw;
 
     nav {
       display: flex;
@@ -392,9 +392,31 @@ nav {
   }
 
 
+  .skills {
+    padding: 0 10em 0 10em;
+  }
+
   .projects-container ul {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, 300px);
     grid-gap: 1em;
+    justify-content: center;
+  }
+  .aboutme-contact {
+    margin-bottom: 0;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    .aboutme {
+      margin: 0;
+      width: 555px;
+    }
+    .contact {
+      padding-right: 5em;
+      padding-left: 10em;
+      .contact-container {
+        margin-top: 1em
+      }
+    }
   }
 }

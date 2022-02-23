@@ -115,6 +115,11 @@ img {
   border-bottom-color: #b3b3b3;
 }
 
+.projects-container {
+  width: 300px;
+  margin: auto;
+}
+
 .projects-container ul li {
   background: #fafafa;
   padding: 1em;
@@ -152,63 +157,55 @@ img {
   text-align: center;
 }
 
-.aboutme {
+.aboutme-contact {
+  display: block;
+  text-align: center;
   color: black;
   background: white;
-  text-align: center;
   padding: 0em;
+  padding-bottom: 4em;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #b3b3b3;
 }
 
-.aboutme-container p {
-  padding: 0 1em 1em 1em;
-  margin: 0;
+.aboutme {
+  width: 50vw;
+  margin: auto;
 }
 
-.contact {
-  color: black;
-  background: #f2f2f2;
-  text-align: center;
-  padding: 1em;
-  padding-top: 0;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #b3b3b3;
-}
-.contact .social-header-contact {
+.social-header-contact {
   display: grid;
   justify-content: center;
 }
-.contact .social-header-contact ul li {
+.social-header-contact ul li {
   text-align: left;
   padding-left: 0;
   margin-left: 0;
 }
-.contact .social-header-contact ul li a span {
-  font-size: 0.7em;
+.social-header-contact ul li a span {
+  font-size: 0.9em;
   color: black;
   vertical-align: center;
   padding-left: 0.5em;
 }
-.contact .social-header-contact ul li a {
+.social-header-contact ul li a {
   width: 20px;
   text-decoration: none;
   color: black;
 }
-.contact .social-header-contact ul a:hover {
+.social-header-contact ul a:hover {
   opacity: 0.7;
   color: #3b648c;
 }
-.contact .social-header-contact ul a:hover span {
+.social-header-contact ul a:hover span {
   color: #3b648c;
 }
-.contact .social-header-contact ul a:hover .freelancermap {
+.social-header-contact ul a:hover .freelancermap {
   content: url("../images/freelancermap_blue.svg");
   opacity: 0.7;
 }
-.contact .social-header-contact ul .freelancermap {
+.social-header-contact ul .freelancermap {
   width: 17px;
   margin: 0;
   margin-left: -1px;
@@ -275,10 +272,17 @@ nav li {
     display: block;
     padding: 0 0.5em;
   }
+
+  .projects-container {
+    width: 300px;
+    margin: auto;
+  }
 }
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1010px) {
   .navbar {
     grid-template-columns: 22% 56% 22%;
+    margin-left: 6vw;
+    margin-right: 6vw;
   }
   .navbar nav {
     display: flex;
@@ -358,10 +362,33 @@ nav li {
     display: inline-block;
   }
 
+  .skills {
+    padding: 0 10em 0 10em;
+  }
+
   .projects-container ul {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, 300px);
     grid-gap: 1em;
+    justify-content: center;
+  }
+
+  .aboutme-contact {
+    margin-bottom: 0;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+  }
+  .aboutme-contact .aboutme {
+    margin: 0;
+    width: 555px;
+  }
+  .aboutme-contact .contact {
+    padding-right: 5em;
+    padding-left: 10em;
+  }
+  .aboutme-contact .contact .contact-container {
+    margin-top: 1em;
   }
 }
 
