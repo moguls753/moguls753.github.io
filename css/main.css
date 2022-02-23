@@ -154,6 +154,7 @@ img {
 .skills .skills-container {
   padding: 1em;
   padding-top: 0;
+  padding-bottom: 2em;
   text-align: center;
 }
 
@@ -172,6 +173,10 @@ img {
 .aboutme {
   width: 50vw;
   margin: auto;
+}
+
+.aboutme-container {
+  font-size: 0.9em;
 }
 
 .social-header-contact {
