@@ -31,6 +31,8 @@ img {
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
   position: absolute;
   left: 0;
   right: 0;
@@ -248,7 +250,6 @@ nav li {
   .mobile-menu {
     display: none;
   }
-
   .navbar {
     display: grid;
     grid-template-columns: 40% auto;
@@ -277,7 +278,6 @@ nav li {
     display: block;
     padding: 0 0.5em;
   }
-
   .projects-container {
     width: 300px;
     margin: auto;
@@ -303,7 +303,6 @@ nav li {
     display: block;
     padding: 0 0.5em;
   }
-
   .social-header {
     display: block !important;
   }
@@ -366,18 +365,15 @@ nav li {
     content: url("../images/github_blue.svg");
     display: inline-block;
   }
-
   .skills {
     padding: 0 10em 0 10em;
   }
-
   .projects-container ul {
     display: grid;
     grid-template-columns: repeat(3, 300px);
     grid-gap: 1em;
     justify-content: center;
   }
-
   .aboutme-contact {
     margin-bottom: 0;
     padding-bottom: 2em;

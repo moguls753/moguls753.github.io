@@ -1,160 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>Freelance Software Engineering</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-221294913-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-221294913-1");
+    </script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="images/favicon.ico">
-  <title>Freelance Software Engineering</title>
-  <link rel="stylesheet" href="css/main.css">
-  <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-221294913-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-221294913-1');
-  </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6MHZVC17ED"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6MHZVC17ED");
+    </script>
+  </head>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6MHZVC17ED"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-6MHZVC17ED');
-  </script>
-</head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">EIKE RACKWITZ</a>
+      </div>
+      <div class="ham">
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="images/menu.svg"
+          alt="hamburger menu"
+        />
+      </div>
 
-<body>
-  <div class="navbar">
-    <div class="logo">
-      <a href="index.html">EIKE RACKWITZ</a>
-    </div>
-    <div class="ham">
-      <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="hamburger menu">
-    </div>
+      <nav>
+        <ul>
+          <li><a href="#work">work</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#aboutme-contact">about me/contact</a></li>
+        </ul>
+      </nav>
 
-    <nav>
-      <ul>
-        <li><a href="#work">work</a></li>
-        <li><a href="#skills">skills</a></li>
-        <li><a href="#aboutme-contact">about me/contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="social-header">
-      <ul>
-        <li><a href="mailto:eike.rackwitz@mail.de" target="_blank" class="fa-solid fa-at"></a></li>
-        <li><a href="https://github.com/moguls753" target="_blank" class="fa-brands fa-github"></a></li>
-        <li><a
-            href="https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/406821-profil-softwareentwickler.html"
-            target="_blank" class="freelancermap"></a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="hero">
-    <div class="content">
-      <img class="portrait" src="images/portrait_color.jpg" alt="Portrait">
-      <h1>Software Developer</h1>
-    </div>
-  </div>
-
-  <!-- TODO: Experience noch hinzufügen, also Arbeitsgeber -->
-  <!--       recent work durch projects ersetzen -->
-
-  <section id="work" class="work">
-    <div class="sectionheader">recent work</div>
-    <div class="projects-container">
-      <ul>
-        <li class="transition" style="cursor: pointer;"
-          onclick="window.open('https://github.com/moguls753/tictactoe', '_blank').focus();">
-          <div class="icon-container one">
-            <img src="images/tictactoe.svg" alt="tictactoe icon">
-          </div>
-          <p class="project-title">Tic Tac Toe</p>
-          <p class="featured-desc project-desc">A small Server-Client TicTacToe Game written in Java using the Swing
-            Framework</p>
-        </li>
-        <li class="transition" style="cursor: pointer;"
-          onclick="window.open('https://github.com/moguls753/filesorter', '_blank').focus();">
-          <div class="icon-container two">
-            <img src="images/filesorter.svg" alt="filesorter icon">
-          </div>
-          <p class="project-title">Organize Files</p>
-          <p class="featured-desc project-desc">A filesorter written in Python. Usefull to sort any kind of files, e.g.
-            your Download folder </p>
-        </li>
-        <li class="transition">
-          <div class="icon-container three">
-            <img src="images/loading.svg" alt="treejs icon">
-          </div>
-          <p class="project-title">More to come</p>
-          <p class="featured-desc project-desc">Maybe a Ruby on Rails or Meteor.js App. Stay tuned.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="skills" class="skills">
-    <div class="sectionheader">skills</div>
-    <div class="skills-container">
-      <ul>
-        <li>Java</li>
-        <li>Ruby on Rails</li>
-        <li>Python</li>
-        <li>html</li>
-        <li>css</li>
-        <li>linux</li>
-      </ul>
-    </div>
-  </section>
-  <section id="aboutme-contact" class="aboutme-contact">
-    <div class="aboutme">
-      <div class="sectionheader">about me</div>
-      <div class="aboutme-container">
-        <p>Hi, my name is Eike Rackwitz and i’m a Mathematical-Technical Software Development student from germany.</p>
+      <div class="social-header">
+        <ul>
+          <li>
+            <a
+              href="mailto:eike.rackwitz@mail.de"
+              target="_blank"
+              class="fa-solid fa-at"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/moguls753"
+              target="_blank"
+              class="fa-brands fa-github"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/406821-profil-softwareentwickler.html"
+              target="_blank"
+              class="freelancermap"
+            ></a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="contact">
-      <div class="sectionheader">contact</div>
-      <div class="contact-container">
+    <div class="hero">
+      <div class="content">
+        <img class="portrait" src="images/portrait_color.jpg" alt="Portrait" />
+        <h1>Software Developer</h1>
+      </div>
+    </div>
 
-        <div class="social-header-contact">
-          <ul>
-            <li><a href="mailto:eike.rackwitz@mail.de" target="_blank"><i
-                  class="fa-solid fa-at"></i><span>Email</span></a></li>
-            <li><a href="https://github.com/moguls753" target="_blank"><i
-                  class="fa-brands fa-github"></i><span>GitHub</span></a></li>
-            <li><a
-                href="https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/406821-profil-softwareentwickler.html"
-                target="_blank"><i class="freelancermap"></i><span>Freelancermap</span></a></li>
-          </ul>
+    <!-- TODO: Experience noch hinzufügen, also Arbeitsgeber -->
+    <!--       recent work durch projects ersetzen -->
+
+    <section id="work" class="work">
+      <div class="sectionheader">recent work</div>
+      <div class="projects-container">
+        <ul>
+          <li
+            class="transition"
+            style="cursor: pointer"
+            onclick="window.open('https://github.com/moguls753/tictactoe', '_blank').focus();"
+          >
+            <div class="icon-container one">
+              <img src="images/tictactoe.svg" alt="tictactoe icon" />
+            </div>
+            <p class="project-title">Tic Tac Toe</p>
+            <p class="featured-desc project-desc">
+              A small Server-Client TicTacToe Game written in Java using the
+              Swing Framework
+            </p>
+          </li>
+          <li
+            class="transition"
+            style="cursor: pointer"
+            onclick="window.open('https://github.com/moguls753/filesorter', '_blank').focus();"
+          >
+            <div class="icon-container two">
+              <img src="images/filesorter.svg" alt="filesorter icon" />
+            </div>
+            <p class="project-title">Organize Files</p>
+            <p class="featured-desc project-desc">
+              A filesorter written in Python. Usefull to sort any kind of files,
+              e.g. your Download folder
+            </p>
+          </li>
+          <li class="transition">
+            <div class="icon-container three">
+              <img src="images/loading.svg" alt="treejs icon" />
+            </div>
+            <p class="project-title">More to come</p>
+            <p class="featured-desc project-desc">
+              Maybe a Ruby on Rails or Meteor.js App. Stay tuned.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="sectionheader">skills</div>
+      <div class="skills-container">
+        <ul>
+          <li>Java</li>
+          <li>Ruby on Rails</li>
+          <li>Python</li>
+          <li>html</li>
+          <li>css</li>
+          <li>linux</li>
+        </ul>
+      </div>
+    </section>
+    <section id="aboutme-contact" class="aboutme-contact">
+      <div class="aboutme">
+        <div class="sectionheader">about me</div>
+        <div class="aboutme-container">
+          <p>
+            Hi, my name is Eike Rackwitz and i’m a Mathematical-Technical
+            Software Development student from germany.
+          </p>
         </div>
       </div>
-    </div>
+      <div class="contact">
+        <div class="sectionheader">contact</div>
+        <div class="contact-container">
+          <div class="social-header-contact">
+            <ul>
+              <li>
+                <a href="mailto:eike.rackwitz@mail.de" target="_blank"
+                  ><i class="fa-solid fa-at"></i><span>Email</span></a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/moguls753" target="_blank"
+                  ><i class="fa-brands fa-github"></i><span>GitHub</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.freelancermap.de/freelancer-verzeichnis/profile/entwicklung/406821-profil-softwareentwickler.html"
+                  target="_blank"
+                  ><i class="freelancermap"></i><span>Freelancermap</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div>&copy; 2022 Eike Rackwitz</div>
+    </footer>
 
-  </section>
-  <footer class="footer">
-    <div>
-      &copy; 2022 Eike Rackwitz
-  </footer>
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
 
-
-  <script>
-
-    const mobileBtn = document.getElementById('mobile-cta')
-    nav = document.querySelector('nav')
-
-    mobileBtn.addEventListener('click', () => {
-      nav.classList.toggle('menu-btn');
-    })
-
-  </script>
-</body>
-
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.toggle("menu-btn");
+      });
+    </script>
+  </body>
 </html>
