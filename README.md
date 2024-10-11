@@ -1,2 +1,2 @@
-# My little portfolio website
-Nothing special here, just an overview.
+# My little portfolio/about me website
+Nothing special here, just a very simple overview.
