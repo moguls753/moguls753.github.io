@@ -13,7 +13,6 @@ body {
   font-family: "Poppins", arial;
   min-height: 100vh;
   position: relative;
-  padding-bottom: 26px;
 }
 
 ul {
@@ -28,10 +27,6 @@ a {
 
 img {
   width: 100%;
-}
-
-svg {
-  width: 30px;
 }
 
 .footer {
@@ -212,21 +207,6 @@ svg {
 .social-header-contact ul a:hover span {
   color: #3b648c;
 }
-.social-header-contact ul a:hover .freelancermap {
-  content: url("../images/freelancermap_blue.svg");
-  opacity: 0.7;
-}
-.social-header-contact ul .freelancermap {
-  width: 17px;
-  margin: 0;
-  margin-left: -1px;
-  text-align: left;
-  text-decoration: none;
-  vertical-align: middle;
-  border-radius: 50%;
-  color: black;
-  content: url("../images/freelancermap.svg");
-}
 
 nav.menu-btn {
   display: block;
@@ -340,34 +320,6 @@ nav li {
   .social-header ul .fa-brands:hover {
     opacity: 0.7;
     color: #3b648c;
-  }
-  .social-header ul .freelancermap {
-    width: 19px;
-    margin: 0 0.6em 0 0.6em;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    border-radius: 50%;
-    color: black;
-    content: url("../images/freelancermap.svg");
-  }
-  .social-header ul .freelancermap:hover {
-    content: url("../images/freelancermap_blue.svg");
-    opacity: 0.7;
-  }
-  .social-header ul .github {
-    width: 21px;
-    margin: 0 0.6em 0 0.6em;
-    vertical-align: middle;
-    content: url("../images/github.svg");
-    display: inline-block;
-  }
-  .social-header ul .github:hover {
-    width: 21px;
-    margin: 0 0.6em 0 0.6em;
-    vertical-align: middle;
-    content: url("../images/github_blue.svg");
-    display: inline-block;
   }
   .skills {
     padding: 0 10em 0 10em;
